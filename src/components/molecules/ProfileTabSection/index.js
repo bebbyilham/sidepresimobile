@@ -63,23 +63,28 @@ const Account = () => {
           text="Change Password"
           onPress={() => navigation.navigate('ChangePassword')}
         />
-        <ItemListMenu text="Home Address" />
-        <ItemListMenu text="Security" />
-        <ItemListMenu text="Payments" />
         <ItemListMenu text="Sign Out" onPress={signOut} />
       </View>
     </ScrollView>
   );
 };
 
-const About = () => {
+const Data = () => {
+  const navigation = useNavigation();
   return (
     <ScrollView>
       <View style={{paddingTop: 8, paddingHorizontal: 24}}>
-        <ItemListMenu text="Rate App" />
-        <ItemListMenu text="Help Center" />
-        <ItemListMenu text="Privacy & Policy" />
-        <ItemListMenu text="Terms & Conditions" />
+        <ItemListMenu
+          text="Identitas Diri"
+          onPress={() => navigation.navigate('IdentitasDiri')}
+        />
+        <ItemListMenu
+          text="Identitas Profesi"
+          onPress={() => navigation.navigate('IdentitasProfesi')}
+        />
+        <ItemListMenu text="Pekerjaan" />
+        <ItemListMenu text="Pengembangan" />
+        <ItemListMenu text="Penilaian" />
       </View>
     </ScrollView>
   );
@@ -87,7 +92,7 @@ const About = () => {
 
 const renderScene = SceneMap({
   1: Account,
-  2: About,
+  2: Data,
 });
 const ProfileTabSection = () => {
   const layout = useWindowDimensions();
@@ -95,7 +100,7 @@ const ProfileTabSection = () => {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
     {key: '1', title: 'Account'},
-    {key: '2', title: 'About'},
+    {key: '2', title: 'Data'},
   ]);
   return (
     <TabView

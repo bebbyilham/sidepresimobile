@@ -9,6 +9,8 @@ import Profile from './Profile';
 import EditProfile from './EditProfile';
 import ChangePassword from './ChangePassword';
 import ItemDetail from './ItemDetail';
+import IdentitasDiri from './IdentitasDiri';
+import IdentitasProfesi from './IdentitasProfesi';
 
 export {
   SplashScreen,
@@ -22,4 +24,6 @@ export {
   EditProfile,
   ChangePassword,
   ItemDetail,
+  IdentitasDiri,
+  IdentitasProfesi,
 };

@@ -13,6 +13,8 @@ import {
   SuccessSignUp,
   ChangePassword,
   ItemDetail,
+  IdentitasDiri,
+  IdentitasProfesi,
 } from '../pages';
 import {BottomNavigator} from '../components';
 const Stack = createNativeStackNavigator();
@@ -82,6 +84,16 @@ const Router = () => {
       <Stack.Screen
         name="ItemDetail"
         component={ItemDetail}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="IdentitasDiri"
+        component={IdentitasDiri}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="IdentitasProfesi"
+        component={IdentitasProfesi}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
