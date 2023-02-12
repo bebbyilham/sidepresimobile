@@ -11,6 +11,7 @@ import ChangePassword from './ChangePassword';
 import ItemDetail from './ItemDetail';
 import IdentitasDiri from './IdentitasDiri';
 import IdentitasProfesi from './IdentitasProfesi';
+import DataPekerjaan from './DataPekerjaan';
 
 export {
   SplashScreen,
@@ -26,4 +27,5 @@ export {
   ItemDetail,
   IdentitasDiri,
   IdentitasProfesi,
+  DataPekerjaan,
 };

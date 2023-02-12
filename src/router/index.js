@@ -15,6 +15,7 @@ import {
   ItemDetail,
   IdentitasDiri,
   IdentitasProfesi,
+  DataPekerjaan,
 } from '../pages';
 import {BottomNavigator} from '../components';
 const Stack = createNativeStackNavigator();
@@ -94,6 +95,11 @@ const Router = () => {
       <Stack.Screen
         name="IdentitasProfesi"
         component={IdentitasProfesi}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="DataPekerjaan"
+        component={DataPekerjaan}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

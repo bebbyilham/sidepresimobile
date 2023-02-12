@@ -82,7 +82,10 @@ const Data = () => {
           text="Identitas Profesi"
           onPress={() => navigation.navigate('IdentitasProfesi')}
         />
-        <ItemListMenu text="Pekerjaan" />
+        <ItemListMenu
+          text="Pekerjaan"
+          onPress={() => navigation.navigate('DataPekerjaan')}
+        />
         <ItemListMenu text="Pengembangan" />
         <ItemListMenu text="Penilaian" />
       </View>

@@ -19,7 +19,7 @@ const SignUpAddress = ({navigation}) => {
   const {registerReducer, photoReducer} = useSelector(state => state);
 
   const onSubmit = () => {
-    console.log('form: ', form);
+    // console.log('form: ', form);
     const data = {
       ...form,
       ...registerReducer,
